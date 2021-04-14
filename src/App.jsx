@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 const App = () => {
 
-    // setname is a fn jo hold karta hai updated data ko
+  
     // name is current data
 
-    const [name, setName] = useState("");
+    const [name, setName] = useState(""); //set name data hold
 
     const [lastName, setLastName] = useState("");
 
@@ -24,7 +24,7 @@ const App = () => {
 
 
     const onSubmit = (event) => {
-        event.preventDefault(); // preventDefault -form ko krnge submit default behavir hai prevent kro wo default behaviour nhi chyea
+        event.preventDefault(); 
         setFullName(name);
         setLastNameNew(lastName);
     };
@@ -33,7 +33,7 @@ const App = () => {
             <div className="main_div">
                 <form onSubmit={onSubmit}>
                     <div>
-                        <h1> Fill The Form  {fullName} {lastNamenew} </h1>{/* jab hm ak input field pe kam kr rhe h toh ye jo element h isko form control nhi kr rha h isko react control karta hai */}
+                        <h1> Fill The Form  {fullName} {lastNamenew} </h1>
 
                         <input
                             type="text"
